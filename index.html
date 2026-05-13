@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejido & Nudos | Artesanía con amor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#F2E6D4;
+      color:#4A2F21;
+      overflow-x:hidden;
+    }
+
+    h1,h2,h3,h4{
+      font-family:'Cormorant Garamond',serif;
+    }
+
+    .hero-bg{
+      background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1800&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .glass{
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    .card-hover{
+      transition:.4s ease;
+    }
+
+    .card-hover:hover{
+      transform:translateY(-10px);
+    }
+
+    .earth-line{
+      height:2px;
+      width:90px;
+      background:#A13C2D;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#F2E6D4]/90 backdrop-blur-md border-b border-[#d8b58a]">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+     <img 
+    src="logo.png"
+    alt="Tejido & Nudos Logo"
+    class="w-14 h-14 object-contain"
+  >
+
+      <nav class="hidden md:flex gap-8 text-sm uppercase tracking-[3px] text-[#4A2F21]">
+        <a href="#nosotros" class="hover:text-[#A13C2D] transition">Nosotros</a>
+        <a href="#productos" class="hover:text-[#A13C2D] transition">Productos</a>
+        <a href="#historia" class="hover:text-[#A13C2D] transition">Historia</a>
+        <a href="#contacto" class="hover:text-[#A13C2D] transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center justify-center px-6 text-center">
+    <div class="glass p-10 rounded-3xl max-w-4xl text-white mt-20">
+      <p class="uppercase tracking-[6px] text-sm mb-5 text-[#EBDAC6]">Artesanía Colombiana</p>
+
+      <h1 class="text-6xl md:text-8xl leading-none font-semibold mb-6">
+        Tejido & Nudos
+      </h1>
+
+      <p class="text-lg md:text-xl leading-relaxed text-[#f1e7dc] max-w-2xl mx-auto">
+        Creamos piezas textiles tejidas a mano con dedicación, tradición y amor por lo artesanal. Cada prenda transmite calidez, autenticidad y conexión humana.
+      </p>
+
+      <div class="mt-10 flex flex-col md:flex-row gap-5 justify-center">
+        <a href="#productos" class="bg-[#A13C2D] hover:bg-[#8b3124] transition px-8 py-4 rounded-full uppercase tracking-[3px] text-sm font-medium">
+          Ver colección
+        </a>
+
+        <a href="#contacto" class="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full uppercase tracking-[3px] text-sm font-medium">
+          Contactar
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="py-28 px-6 bg-[#F2E6D4]">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <img 
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[40px] shadow-2xl w-full h-[700px] object-cover"
+        >
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[5px] text-sm text-[#A13C2D] mb-3">
+          Nuestra esencia
+        </p>
+
+        <h2 class="text-6xl leading-tight mb-6 text-[#4A2F21]">
+          Artesanía hecha con historia y dedicación
+        </h2>
+
+        <div class="earth-line mb-8"></div>
+
+        <p class="text-lg leading-relaxed text-[#5d4637] mb-6">
+          Tejido & Nudos nace del amor por las prendas hechas a mano y del deseo de preservar la tradición artesanal. Arturo Rossi y Clara Sorate han dedicado años a la elaboración de ruanas, bufandas, estolas y prendas personalizadas que reflejan cuidado, detalle y autenticidad.
+        </p>
+
+        <p class="text-lg leading-relaxed text-[#5d4637] mb-10">
+          Nuestro emprendimiento busca conectar con personas que valoran lo humano, lo cálido y lo natural, ofreciendo productos únicos que transmiten confort, elegancia y cercanía.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-[#EBDAC6] p-6 rounded-3xl">
+            <h3 class="text-4xl font-semibold text-[#A13C2D]">+5</h3>
+            <p class="mt-2 uppercase tracking-[3px] text-sm">Años de experiencia</p>
+          </div>
+
+          <div class="bg-[#6F7A4F] text-white p-6 rounded-3xl">
+            <h3 class="text-4xl font-semibold">100%</h3>
+            <p class="mt-2 uppercase tracking-[3px] text-sm">Hecho a mano</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="py-28 px-6 bg-[#ebe1d2]">
+
+    <div class="max-w-7xl mx-auto text-center mb-20">
+      <p class="uppercase tracking-[5px] text-sm text-[#A13C2D] mb-3">
+        Colección artesanal
+      </p>
+
+      <h2 class="text-6xl text-[#4A2F21] mb-4">
+        Productos destacados
+      </h2>
+
+      <div class="earth-line mx-auto"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+
+      <div class="bg-white rounded-[35px] overflow-hidden shadow-xl card-hover">
+        <img 
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
+          class="h-[350px] w-full object-cover"
+        >
+
+        <div class="p-8">
+          <h3 class="text-4xl mb-4">Ruanas</h3>
+          <p class="leading-relaxed text-[#5c4b41]">
+            Prendas cálidas y elegantes elaboradas con tejidos artesanales y materiales suaves de alta calidad.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-[35px] overflow-hidden shadow-xl card-hover">
+        <img 
+          src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop"
+          class="h-[350px] w-full object-cover"
+        >
+
+        <div class="p-8">
+          <h3 class="text-4xl mb-4">Bufandas</h3>
+          <p class="leading-relaxed text-[#5c4b41]">
+            Diseños tejidos a mano que combinan comodidad, tradición y estilo contemporáneo.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-[35px] overflow-hidden shadow-xl card-hover">
+        <img 
+          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop"
+          class="h-[350px] w-full object-cover"
+        >
+
+        <div class="p-8">
+          <h3 class="text-4xl mb-4">Pedidos personalizados</h3>
+          <p class="leading-relaxed text-[#5c4b41]">
+            Creamos piezas únicas adaptadas al estilo y necesidades de cada cliente.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- HISTORIA -->
+  <section id="historia" class="py-28 px-6 bg-[#4A2F21] text-white relative overflow-hidden">
+
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+      <div class="absolute w-[600px] h-[600px] rounded-full border border-white -top-40 -left-40"></div>
+      <div class="absolute w-[500px] h-[500px] rounded-full border border-white bottom-[-200px] right-[-100px]"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+
+      <div class="text-center mb-20">
+        <p class="uppercase tracking-[5px] text-sm text-[#d8b58a] mb-3">
+          Identidad visual
+        </p>
+
+        <h2 class="text-6xl mb-5">
+          Inspirado en la tierra, la calidez y la naturaleza
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-lg text-[#e5d7c6] leading-relaxed">
+          La propuesta visual utiliza tonos tierra, marrones y verdes suaves que representan la conexión con lo artesanal, la tranquilidad y la cercanía humana. La marca busca transmitir confianza, elegancia y autenticidad.
+        </p>
+      </div>
+
+
+      <div class="grid md:grid-cols-4 gap-6">
+
+        <div class="rounded-[30px] p-10 h-64 flex items-end text-white" style="background:#A13C2D">
+          <div>
+            <p class="uppercase tracking-[3px] text-sm">Terracota</p>
+            <h3 class="text-3xl font-semibold mt-2">#A13C2D</h3>
+          </div>
+        </div>
+
+        <div class="rounded-[30px] p-10 h-64 flex items-end text-white" style="background:#4A2F21">
+          <div>
+            <p class="uppercase tracking-[3px] text-sm">Marrón</p>
+            <h3 class="text-3xl font-semibold mt-2">#4A2F21</h3>
+          </div>
+        </div>
+
+        <div class="rounded-[30px] p-10 h-64 flex items-end text-white" style="background:#6F7A4F">
+          <div>
+            <p class="uppercase tracking-[3px] text-sm">Verde natural</p>
+            <h3 class="text-3xl font-semibold mt-2">#6F7A4F</h3>
+          </div>
+        </div>
+
+        <div class="rounded-[30px] p-10 h-64 flex items-end text-[#4A2F21]" style="background:#EBDAC6">
+          <div>
+            <p class="uppercase tracking-[3px] text-sm">Beige</p>
+            <h3 class="text-3xl font-semibold mt-2">#EBDAC6</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="py-28 px-6 bg-[#F2E6D4]">
+    <div class="max-w-5xl mx-auto bg-[#A13C2D] rounded-[40px] p-16 text-center text-white shadow-2xl">
+
+      <p class="uppercase tracking-[5px] text-sm mb-4 text-[#f1d3c8]">
+        Hecho con amor
+      </p>
+
+      <h2 class="text-6xl mb-6 leading-tight">
+        Cada tejido cuenta una historia única
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg text-[#f4e6de] leading-relaxed mb-10">
+        Descubre prendas artesanales creadas especialmente para brindar calidez, estilo y autenticidad en cada detalle.
+      </p>
+
+      <a href="#contacto" class="bg-[#F2E6D4] text-[#4A2F21] px-10 py-4 rounded-full uppercase tracking-[3px] text-sm font-semibold hover:bg-white transition">
+        Solicitar información
+      </a>
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-28 px-6 bg-[#ebe1d2]">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="uppercase tracking-[5px] text-sm text-[#A13C2D] mb-3">
+          Contacto
+        </p>
+
+        <h2 class="text-6xl leading-tight mb-6 text-[#4A2F21]">
+          Conecta con nuestra tradición artesanal
+        </h2>
+
+        <div class="earth-line mb-8"></div>
+
+        <p class="text-lg leading-relaxed text-[#5c4b41] mb-10">
+          Escríbenos para realizar pedidos personalizados, conocer nuestros productos o empezar a crear una pieza única para ti.
+        </p>
+
+        <div class="space-y-5 text-lg">
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            Atención desde el hogar · Colombia
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            WhatsApp: +57 300 000 0000
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            tejidosynudos@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-[40px] p-10 shadow-2xl">
+
+        <form class="space-y-6">
+          <div>
+            <label class="block mb-2 uppercase tracking-[3px] text-sm text-[#A13C2D]">
+              Nombre
+            </label>
+            <input type="text" class="w-full border border-[#d8b58a] rounded-2xl p-4 outline-none focus:border-[#A13C2D]">
+          </div>
+
+          <div>
+            <label class="block mb-2 uppercase tracking-[3px] text-sm text-[#A13C2D]">
+              Correo
+            </label>
+            <input type="email" class="w-full border border-[#d8b58a] rounded-2xl p-4 outline-none focus:border-[#A13C2D]">
+          </div>
+
+          <div>
+            <label class="block mb-2 uppercase tracking-[3px] text-sm text-[#A13C2D]">
+              Mensaje
+            </label>
+            <textarea rows="5" class="w-full border border-[#d8b58a] rounded-2xl p-4 outline-none focus:border-[#A13C2D]"></textarea>
+          </div>
+
+          <button class="w-full bg-[#4A2F21] hover:bg-[#2d1c14] transition text-white py-5 rounded-2xl uppercase tracking-[4px] text-sm">
+            Enviar mensaje
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-[#4A2F21] text-white py-10 px-6 text-center">
+
+    <h2 class="text-4xl mb-3">Tejido & Nudos</h2>
+
+    <p class="uppercase tracking-[4px] text-sm text-[#d8b58a] mb-6">
+      Artesanía con amor
+    </p>
+
+    <p class="text-[#e6d8c7] max-w-2xl mx-auto leading-relaxed">
+      Proyecto de identidad visual y experiencia digital enfocado en fortalecer la presencia online de un emprendimiento artesanal local.
+    </p>
+
+    <div class="mt-8 text-sm text-[#cab7a3]">
+      © 2026 Tejido & Nudos · Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
